@@ -10,7 +10,6 @@
 			window.gtag = function(){dataLayer.push(arguments);}
 			gtag('js',new Date());
 		}
-
 		window.gtag ? resolve(window.gtag) : reject('gtag not found');
 	})
 	.then(function(ga) { ga('config', 'UA-60322872-1'); return ga; })
@@ -19,16 +18,15 @@
 		const smsFormId = 'footer_counsel_form';
 		const onFormId = 'form1';
 		const onFormPath = /^\/?franchise\/counsel\./i;
-		const runEvent = 'submit';
+		const runEvent = 'click';
+		// const runEvent = 'submit';
 		const evCategory = '창업상담';
 		let validFormIds = ['footer_counsel_form', 'form1'];
 		let onSubmitSmsForm = function(ev) {
-			console.log(ev);
 			let rg = ev.target.querySelector('select[name="counsel_region"]').value;
 			ga('event', 'SMS제출', { event_category: evCategory, event_label: rg, });
 		}
 		let onSubmitOnlineForm = function(ev) {
-			console.log(ev);
 			let rg = ev.target.querySelector('select[name*="Region"]').value;
 			ga('event', '온라인제출', {event_category: evCategory,event_label: rg,});
 		}
