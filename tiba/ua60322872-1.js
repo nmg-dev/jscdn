@@ -31,10 +31,14 @@
 			ga('event', '온라인제출', {event_category: evCategory,event_label: rg,});
 		}
 		frms.forEach(function(f) {
-			if(f.id == smsFormId)
+			if(f.id == smsFormId) {
 				f.addEventListener(runEvent, onSubmitSmsForm);
-			else if(f.id == onFormId && onFormPath.exec(location.pathname))
+				console.log('sms listener updated', f);
+			}
+			else if(f.id == onFormId && onFormPath.exec(location.pathname)) {
 				f.addEventListener(runEvent, onSubmitOnlineForm); 
+				console.log('online listener updated', f);
+			}
 		});
 	})
 	.catch(function(err) { console.error(arguments); });
