@@ -18,8 +18,7 @@
 		const smsFormId = 'footer_counsel_form';
 		const onFormId = 'form1';
 		const onFormPath = /^\/?franchise\/counsel\./i;
-		const runEvent = 'click';
-		// const runEvent = 'submit';
+		const runEvent = 'submit';
 		const evCategory = '창업상담';
 		let validFormIds = ['footer_counsel_form', 'form1'];
 		let onSubmitSmsForm = function(ev) {
@@ -33,11 +32,11 @@
 		frms.forEach(function(f) {
 			if(f.id == smsFormId) {
 				f.addEventListener(runEvent, onSubmitSmsForm);
-				console.log('sms listener updated', f);
+				// console.log('sms listener updated', f);
 			}
 			else if(f.id == onFormId && onFormPath.exec(location.pathname)) {
 				f.addEventListener(runEvent, onSubmitOnlineForm); 
-				console.log('online listener updated', f);
+				// console.log('online listener updated', f);
 			}
 		});
 	})
