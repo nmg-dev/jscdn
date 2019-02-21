@@ -115,6 +115,14 @@
               <small>/secured/order/[ORDER_CODE]/view</small>
               <div class="alert alert-light">
                 &lt;script type="text/javascript"&gt;
+                  /* kakaoPixel('9177313383537918022').purchase({
+                    total_quantity: '1', // 총 구매 수량, optional
+                    total_price: '10000', // 총 구매 금액, optional
+                    currency: 'KRW',      // 통화 기준 (KRW), optional
+                    products: [
+                      {name: '제품명', quantity: '수량', price: '단가'}, 
+                    ]
+                  }) */
                   (function() { let oinfo = {currency: 'KRW'}; 
                   let cq = function(s,pp){ s+=parseInt(pp.quantity); return s; }; 
                   let pq = function(s,pp){ s+=parseInt(pp.price); return s; };
