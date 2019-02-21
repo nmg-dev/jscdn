@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="yg.song@nextmediagroup.co.kr">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>ssf shop 카카오모먼트 태그</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <!-- Vue.js for preview -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <!-- daterange components -->
+    <link rel="stylesheet" href="daterange.css">
+    <script src="daterange.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">카카오 모먼트 태그 안내</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+    </ul>
+  </div>
+  <style type="text/css">
+    div.card-text .alert {
+      white-space: pre-line;
+    }
+  </style>
+</nav>
+
+<main role="main" class="container">
+  <div class="row spacer" style="height: 90px;">
+    <div class="col-12">&nbsp;</div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+        <!-- pageview -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">기본 (Default)</h5>
+            <div class="card-text">
+              <small>모든 페이지</small>
+              <div class="alert alert-light">
+                &lt;script type="text/javascript" charset="UTF8" src="//t1.daumcdn.net/adfit/static/kp.js" onload="kakaoPixel('9177313383537918022').pageView();"&gt;&lt;/script&gt;
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- registration -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">회원가입 (registration)</h5>
+            <div class="card-text">
+              <small>/secured/member/onlineMemberSucces,<br />/secured/member/memberShipSucces</small>
+              <div class="alert alert-light">
+                &lt;script type="text/javascript" charset="UTF8" src="//t1.daumcdn.net/adfit/static/kp.js" onload="kakaoPixel('9177313383537918022').pageView(); kakaoPixel('9177313383537918022').completeRegistration();"&gt;&lt;/script&gt;
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- view content -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">제품 상세 (view details)</h5>
+            <div class="card-text">
+              <small>/[SHOP_CODE]/G[PRODUCT_CODE]/good?</small>
+              <div class="alert alert-light">
+                &lt;script type="text/javascript" charset="UTF8" src="//t1.daumcdn.net/adfit/static/kp.js" onload="kakaoPixel('9177313383537918022').pageView(); kakaoPixel('9177313383537918022').viewContent({id: window._godNo || /\/([^\/]+)\/(G[\w]+)\/good/i.exec(window.location.pathname)[2]});"&gt;&lt;/script&gt;
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- view cart -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">장바구니 (view cart)</h5>
+            <div class="card-text">
+              <small>/public/cart/list</small>
+              <div class="alert alert-light">
+                &lt;script type="text/javascript" charset="UTF8" src="//t1.daumcdn.net/adfit/static/kp.js" onload="kakaoPixel('9177313383537918022').pageView(); kakaoPixel('9177313383537918022').viewCart();"&gt;&lt;/script&gt;
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- view cart -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">구매 (purchase)</h5>
+            <div class="card-text">
+              <small>/secured/order/[ORDER_CODE]/view</small>
+              <div class="alert alert-light">
+                &lt;script type="text/javascript" charset="UTF8" src="//t1.daumcdn.net/adfit/static/kp.js" onload="kakaoPixel('9177313383537918022').pageView();&gt;&lt;/script&gt;
+                &lt;script type="text/javascript"&gt;
+                  (function() { let oinfo = {currency: 'KRW'}; 
+                  let cq = function(s,pp){ s+=parseInt(pp.quantity); return s; }; 
+                  let pq = function(s,pp){ s+=parseInt(pp.price); return s; };
+                  if(window.dataLayer) {
+                    oinfo = window.dataLayer.reduce(function(agg,d) {
+                      if(d.event=='purchase' && d.ecommerce && d.ecommerce.purchase) {
+                        let pur = d.ecommerce.purchase;
+                        let prs = pur.products;
+                        let oi = pur.actionField;
+                        agg.total_quantity = prs.reduce(cq, 0);
+                        agg.total_price = parseInt(oi.revenue);
+                        agg.products = prs; 
+                      }
+                      return agg; 
+                    }, oinfo);
+                  } else if(window.emnet_tagm_products) {
+                    let prs = emnet_tagm_products;
+                    agg.total_quantity = prs.reduce(cq,0);
+                    agg.total_price = prs.reduce(pq,0);
+                    agg.products = prs;
+                  } else { return {}; } return oinfo; }()
+                &lt;/script&gt;
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-12">
+      
+    </div>
+  </div>
+</main><!-- /.container -->
+</html>
