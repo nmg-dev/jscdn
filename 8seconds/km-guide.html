@@ -56,6 +56,7 @@
               <small>모든 페이지</small>
               <div class="alert alert-light">
                 &lt;script type="text/javascript" charset="UTF8" src="//t1.daumcdn.net/adfit/static/kp.js" onload="kakaoPixel('9177313383537918022').pageView();"&gt;&lt;/script&gt;
+                <!-- TODO: 기능 페이지 내용은 이 아래 추가 -->
               </div>
             </div>
           </div>
@@ -68,7 +69,9 @@
             <div class="card-text">
               <small>/secured/member/onlineMemberSucces,<br />/secured/member/memberShipSucces</small>
               <div class="alert alert-light">
-                &lt;script type="text/javascript" charset="UTF8" src="//t1.daumcdn.net/adfit/static/kp.js" onload="kakaoPixel('9177313383537918022').pageView(); kakaoPixel('9177313383537918022').completeRegistration();"&gt;&lt;/script&gt;
+                &lt;script type="text/javascript"&gt;
+                  kakaoPixel('9177313383537918022').completeRegistration();
+                &lt;/script&gt;
               </div>
             </div>
           </div>
@@ -81,7 +84,9 @@
             <div class="card-text">
               <small>/[SHOP_CODE]/G[PRODUCT_CODE]/good?</small>
               <div class="alert alert-light">
-                &lt;script type="text/javascript" charset="UTF8" src="//t1.daumcdn.net/adfit/static/kp.js" onload="kakaoPixel('9177313383537918022').pageView(); kakaoPixel('9177313383537918022').viewContent({id: window._godNo || /\/([^\/]+)\/(G[\w]+)\/good/i.exec(window.location.pathname)[2]});"&gt;&lt;/script&gt;
+                &lt;script type="text/javascript"&gt;
+                  kakaoPixel('9177313383537918022').viewContent({id: window._godNo || /\/([^\/]+)\/(G[\w]+)\/good/i.exec(window.location.pathname)[2]});
+                &lt;/script&gt;
               </div>
             </div>
           </div>
@@ -94,7 +99,9 @@
             <div class="card-text">
               <small>/public/cart/list</small>
               <div class="alert alert-light">
-                &lt;script type="text/javascript" charset="UTF8" src="//t1.daumcdn.net/adfit/static/kp.js" onload="kakaoPixel('9177313383537918022').pageView(); kakaoPixel('9177313383537918022').viewCart();"&gt;&lt;/script&gt;
+                &lt;script type="text/javascript"&gt;
+                  kakaoPixel('9177313383537918022').viewCart();
+                &lt;/script&gt;
               </div>
             </div>
           </div>
@@ -107,7 +114,6 @@
             <div class="card-text">
               <small>/secured/order/[ORDER_CODE]/view</small>
               <div class="alert alert-light">
-                &lt;script type="text/javascript" charset="UTF8" src="//t1.daumcdn.net/adfit/static/kp.js" onload="kakaoPixel('9177313383537918022').pageView();&gt;&lt;/script&gt;
                 &lt;script type="text/javascript"&gt;
                   (function() { let oinfo = {currency: 'KRW'}; 
                   let cq = function(s,pp){ s+=parseInt(pp.quantity); return s; }; 
